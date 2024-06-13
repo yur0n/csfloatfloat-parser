@@ -7,7 +7,6 @@ import connectToDb from './db/connection.js';
 
 import '../bots/bot_admin.js'
 import '../bots/bot_notifier.js'
-import './utils/updateBuffDB.js'
 
 try {
   await connectToDb();
