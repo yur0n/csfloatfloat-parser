@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  server:
+    container_name: server
+    image: server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 443:443
+    env_file:
+      - .env
+    environment:
+      - MONGODB_CONNECTION=mongodb://mongo:27017/main
+    depends_on:
+      - mongo
+      
+  mongo:
+    container_name: mongo
+    image: mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_DATABASE=main
+    volumes:
+      - mongodbdata:/data/db
+    
+volumes:
+  mongodbdata:
+    driver: local

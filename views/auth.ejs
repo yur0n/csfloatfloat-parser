@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/icon/favicon.ico" type="image/x-icon">
+	<title>CSFLOAT PARSER</title>
+	<link rel="stylesheet" href="/css/tailwind.css">
+</head>
+<body>
+	<div class="min-h-screen bg-gray-900 flex flex-col items-center justify-center" style="background-image: url(../img/main-bg.png);">
+		<h1 class="text-5xl text-white font-bold mb-8 animate-pulse">
+			Welcome to CSFLOAT PARSER!
+		</h1>
+		<p class="text-white text-lg mb-8">
+			Please, enter your subscription code to access the site
+		</p>
+		<form class="flex flex-col items-center">
+			<input name="code" placeholder="">
+			<button type="submit" class="text-white bg-gray-900">
+				Enter
+			</button>
+		</form>
+	</div> 
+<script>
+	document.querySelector('form').addEventListener('submit', async (e) => {
+		e.preventDefault();
+		let p = document.querySelector('p');
+		const code = e.target.code.value;
+		const response = await fetch('/subscribe', {
+				headers: {
+					'authorization': 'Bearer ' + code
+				}
+		});
+		if (response.ok) {
+			const res = await response.json();
+			if (res.success) {
+				location.reload();
+			} else if (res.fail) {
+				p.textContent = res.fail;
+				setTimeout(() => {
+					p.textContent = 'Please, enter your subscription code to access the site';
+				}, 3000);
+			}
+		} else {
+			p.textContent = 'Server error. Please try again later';
+		}
+	});
+</script>
+</body> 
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSFLOAT PARSER</title>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header-row">
+            <button class="header-burger open-modal" data-modal-open="settings">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/" class="header-logo">
+                CSFLOAT PARSER
+            </a>
+            <!-- <button class="header-button open-modal toggle-active" data-modal-open="key">
+                Use Key
+            </button> -->
+        </div>
+        <div class="settings modal">
+            <div class="settings-top">
+                <button class="settings-top__close close-modal" data-modal-close="settings">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <p class="setting-top__title">
+                    SETTINGS
+                </p>
+            </div>
+            <div class="settings-content">
+                <div class="settings-block">
+                    <div class="settings-block__item">
+                        <p>
+                            Min. Profit
+                        </p>
+                        <label for="min-profit">
+                            <input id="min-profit">
+                        </label>
+                    </div>
+                    <button class="settings-block__info">
+                        <img src="./img/que-icon.svg" alt="">
+                    </button>
+                    <div class="settings-block__info-content">
+                        <h5>
+                            Our recommendation
+                        </h5>
+                        <p>
+                            Min. Profit: 5%
+                        </p>
+                        <p>
+                            Max. Profit: 15%
+                        </p>
+                    </div>
+                </div>
+                <div class="settings-block__telegram">
+                    <p>
+                        Telegram ID
+                    </p>
+                    <label for="telegram-id">
+                        <input type="number" id="telegram-id">
+                    </label>
+                    <button class="settings-block__info">
+                        <img src="./img/que-icon.svg" alt="">
+                    </button>
+                    <div class="settings-block__info-content">
+                        <h5>
+                            How to get ID?
+                        </h5>
+                        <p>
+                            Open telegram and search for @getmyid-bot. Then send /start and write id in line
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="board">
+            <div class="container">
+                <div class="board-row">
+                    <div class="table">
+                        <div class="table-top">
+                            <button class="table-top__start toggle-active">
+                                <img src="./img/start-icon.svg" alt="">
+                                <span>
+                        Start
+                    </span>
+                            </button>
+                            <button class="table-top__clear toggle-active">
+                                <img src="./img/clear-icon.svg" alt="">
+                                <span>
+                        Clear
+                    </span>
+                            </button>
+                            <button class="table-top__drop open-modal" data-modal-open="logs">
+                                <img src="./img/drop-icon.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="table-content">
+                            <div class="table-content__scrollbar">
+                                <div class="table-content__info">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logs modal">
+                        <div class="logs-buttons"> 
+                        <input class="logs__button" placeholder="Item name" style="padding-left: 0; margin-left: 0; text-align: center">
+                        <button class="logs__button__check">
+                        <span><img src="./img/check.svg" alt="check"></span>
+                        </button>
+                        <button class="logs__button__trash">
+                        <span><img src="./img/trash.svg" alt="trash"></span>
+                        </button>
+                        </div>
+                    <div class="logs-content">
+                            <div class="logs-content__info-titles">
+                                <h3 class="logs-content__items">&nbsp&nbsp&nbsp&nbsp&nbspItem</h3>
+                                <h3 class="logs-content__items">Min <br> Float</h3>
+                                <h3 class="logs-content__items">Max <br> Float</h3>
+                                <h3 class="logs-content__items">Max <br> Price</h3>
+                            </div>
+                            <div class="logs-content__scrollbar">
+                                <div class="logs-content__info">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="key modal">
+                        <div class="key-block">
+                            <p>
+                                Use Secret Key
+                            </p>
+                            <label for="secret-key">
+                                <input type="number" id="secret-key">
+                            </label>
+                            <button class="key-block__info">
+                                <img src="./img/que-icon.svg" alt="">
+                            </button>
+                            <div class="key-block__info-content">
+                                <h5>
+                                    How to get Key?
+                                </h5>
+                                <p>
+                                    Open your profile
+                                    in site and click on
+                                    the button with product
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+<script src="./js/localforage.js"></script>
+<script src="./js/app.js"></script>
+<script src="./js/settings.js"></script>
+</body>
+</html>

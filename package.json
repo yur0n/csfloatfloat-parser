@@ -1,0 +1,29 @@
+{
+  "name": "csmoney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "license": "AGPL-version-3.0",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env src/index.js",
+    "dev": "nodemon --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "@grammyjs/conversations": "^1.2.0",
+    "@grammyjs/menu": "^1.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "cors": "^2.8.5",
+    "cron": "^3.1.7",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2",
+    "grammy": "^1.22.4",
+    "mongoose": "^8.3.1",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "tailwindcss": "^3.4.3"
+  }
+}
