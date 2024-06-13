@@ -159,12 +159,12 @@ a {
 }
 
 .table {
-    width: 938px;
+    width: 70%;
     max-width: 1100px;
     position: relative;
     border-radius: 45px;
-    background: rgba(53, 51, 64, 0.9);
-    border: 3px solid #656270;
+    background: rgb(48 48 48 / 80%);
+    border: 3px solid #838383;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -184,24 +184,25 @@ a {
 .table-top__start {
     min-width: 165px;
     padding: 10px 25px;
-    border: 3px solid #656270;
+    border: 3px solid #838383;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     font-size: 25px;
     color: #c0bfc3;
-    background-color: #4B4856;
+    background-color: #424242;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
 }
 
 .table-top__start.active {
-    background-color: #32303c;
+    background-color: #303030;
 }
 
 .table-top__start > img {
@@ -217,7 +218,7 @@ a {
 .table-top__clear {
     min-width: 165px;
     padding: 10px 25px;
-    border: 3px solid #656270;
+    border: 3px solid #838383;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
@@ -228,14 +229,14 @@ a {
     font-weight: 500;
     font-size: 25px;
     color: #c0bfc3;
-    background-color: #4B4856;
+    background-color: #424242;
     cursor: pointer;
     margin-left: auto;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.15s ease-in-out;
 }
 
 .table-top__clear.active {
-    background-color: #32303c;
+    background-color: #303030;
 }
 
 .table-top__clear > img {
@@ -265,8 +266,8 @@ a {
     width: 100%;
     max-height: 400px;
     border-radius: 20px;
-    background: #4b4856;
-    border: 3px solid #656270;
+    background: #424242;
+    border: 3px solid #838383;
     margin-top: 30px;
     padding: 10px 5px;
 }
@@ -332,7 +333,7 @@ a {
     align-items: center;
     justify-content: space-around;
     gap: 8px;
-    
+
     li {
         width: 80px;
         height: 55px;
@@ -366,10 +367,10 @@ a {
     position: fixed;
     top: 0;
     left: -100%;
-    border-right: 3px solid #656270;
+    border-right: 3px solid #838383;
     transition: all 0.4s ease-in-out;
     background-image: url("../img/settings-bg.png");
-    background-color: #24222c;
+    background-color: #212121;
     z-index: 15;
 }
 
@@ -385,7 +386,7 @@ a {
     align-items: center;
     padding: 13px 25px 13px 25px;
     gap: 40px;
-    background: #383643;
+    background: rgb(66 66 66/ 85%);
 }
 
 .settings-top__close {
@@ -435,8 +436,8 @@ a {
     justify-content: space-around;
     padding: 20px;
     border-radius: 25px;
-    border: 3px solid #656270;
-    background: rgba(53, 51, 64, 0.9);
+    border: 3px solid #838383;
+    background: rgb(48 48 48/ 80%);
 }
 
 .settings-block__item {
@@ -466,8 +467,8 @@ a {
     text-align: center;
     font-size: x-large;
     width: 100%;
-    border: 3px solid #656270;
-    background-color: #4B4856;
+    border: 3px solid #838383;
+    background-color: #424242;
     border-radius: 10px;
     color: #b7b6bb;
     padding: 5px;
@@ -511,7 +512,7 @@ input[type=number] {
     width: 170px;
     padding: 14px;
     box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.53);
-    background: rgba(75, 72, 86, 0.9);
+    background: rgb(66 66 66 / 90%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -555,8 +556,8 @@ input[type=number] {
     align-items: center;
     padding: 20px;
     border-radius: 25px;
-    border: 3px solid #656270;
-    background: rgba(53, 51, 64, 0.9);
+    border: 3px solid #838383;
+    background: rgba(48 48 48/ 80%);
 }
 
 .settings-block__telegram > p {
@@ -578,8 +579,8 @@ input[type=number] {
 .settings-block__telegram > label > input {
     text-align: center;
     width: 100%;
-    border: 3px solid #656270;
-    background-color: #4B4856;
+    border: 3px solid #838383;
+    background-color: #424242;
     border-radius: 10px;
     color: #b7b6bb;
     font-size: x-large;
@@ -593,8 +594,8 @@ input[type=number] {
     margin-left: 3%;
     position: relative;
     border-radius: 45px;
-    background: rgba(53, 51, 64, 0.9);
-    border: 3px solid #656270;
+    background: rgb(45 45 45);
+    border: 3px solid #838383;
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -638,7 +639,7 @@ input[type=number] {
     height: 47px;
     margin-right: 5px;
     padding: 5px 10px;
-    border: 3px solid #656270;
+    border: 3px solid #838383;
     border-radius: 13px;
     display: flex;
     flex-direction: row;
@@ -649,7 +650,7 @@ input[type=number] {
     font-weight: 500;
     font-size: 21px;
     color: #c0bfc3;
-    background-color: #4B4856;
+    background-color: #424242;
 
 }
 
@@ -725,14 +726,14 @@ input[type=number] {
     justify-self: center;
     justify-content: center;
     font-size: 16px;
-    border: 3px solid #656270;
+    border: 3px solid #838383;
     border-radius: 10px;
     margin-right: 10px;
     overflow: hidden;
     cursor: pointer;
 }
 .logs-content__info-row h4.selected {
-    background-color: #4b4856;
+    background-color: #424242;
 }
 .logs-content__info-row ul {
     width: 50%;
@@ -740,7 +741,7 @@ input[type=number] {
     align-items: center;
     justify-content: space-around;
     gap: 8px;
-    
+
     li {
         position: relative;
         width: 60px;
@@ -752,12 +753,12 @@ input[type=number] {
             text-align: center;
             font-size: 16px;
             width: 100%;
-            border: 3px solid #656270;
-            background-color: rgba(53, 51, 64, 0.9);
+            border: 3px solid #838383;
+            background-color: rgb(45 45 45);
             border-radius: 10px;
             color: #b7b6bb;
             padding: 5px;
-            
+
         }
     }
 }
@@ -911,4 +912,3 @@ input[type=number] {
     color: #b7b6bb;
     margin-top: 5px;
 }
-
