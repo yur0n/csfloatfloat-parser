@@ -61,6 +61,10 @@ async function start() {
     await storage.iterate((value, key) => {
         items.push(value);
     }).catch(console.error);
+    await fileStorage.iterate((value, key) => {
+        items.push(value);
+    }).catch(console.error);
+    
     const data = {
         items,
         minProfit: minProfitCoef || 1.01,
