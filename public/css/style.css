@@ -589,6 +589,7 @@ input[type=number] {
 }
 
 .logs {
+    flex-shrink: 0;
     width: 643px;
     max-width: 850px;
     margin-left: 3%;
@@ -627,13 +628,24 @@ input[type=number] {
 }
 
 .logs__button__trash {
-    margin-left: 8%;
+    margin-left: 5%;
     width: 43px;
     height: 41px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 }
+
+
+.logs__button__upload {
+  margin-left: 5%;
+  width: 43px;
+  height: 41px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .logs__button {
     width: 346px;
     height: 47px;
